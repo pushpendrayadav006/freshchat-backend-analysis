@@ -11,14 +11,14 @@ app.use(express.json()); // Middleware to parse JSON bodies
 
 const upload = multer({ dest: "uploads/" });
 
-const resultDir = path.join(__dirname, "result");
-const resultFile = path.join(resultDir, `${Date.now()}.log`);
+// const resultDir = path.join(__dirname, "result");
+// const resultFile = path.join(resultDir, `${Date.now()}.log`);
 
-const logStream = fs.createWriteStream(resultFile, { flags: "a" });
+// const logStream = fs.createWriteStream(resultFile, { flags: "a" });
 
 const log = (message) => {
   console.log(message);
-  logStream.write(`${new Date().toISOString()} - ${message}\n`);
+  // logStream.write(`${new Date().toISOString()} - ${message}\n`);
 };
 
 // Function to call Gemini API and analyze conversations
