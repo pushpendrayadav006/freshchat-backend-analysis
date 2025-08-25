@@ -1,0 +1,9 @@
+.DS_Store
+
+/result
+
+/uploads
+
+node_modules/
+
+.env
